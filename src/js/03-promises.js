@@ -16,7 +16,7 @@ function createPromise(position, delay) {
   });
 }
 
-form.addEventListener('submit', evt => {
+const onSubmit = evt => {
   evt.preventDefault();
   const {
     elements: { amount, delay, step },
@@ -33,9 +33,11 @@ form.addEventListener('submit', evt => {
           `✅Fulfilled promise ${position} in ${delay}ms`
         );
       })
-      .catch(({ position, delay }) => {
+      .catch(({ position, delay }) =git> {
         Notiflix.Notify.failure(`❌Rejected promise ${position} in ${delay}ms`);
       });
     delayEl += stepEl;
   }
-});
+};
+
+form.addEventListener('submit', onSubmit);

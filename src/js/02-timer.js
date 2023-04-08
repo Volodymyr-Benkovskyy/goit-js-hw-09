@@ -3,10 +3,10 @@ import 'flatpickr/dist/flatpickr.min.css';
 import Notiflix from 'notiflix';
 
 const btnStart = document.querySelector('button[data-start]');
-let daysEl = document.querySelector('.value[data-days]');
-let hoursEl = document.querySelector('.value[data-hours]');
-let minutesEl = document.querySelector('.value[data-minutes]');
-let secondsEl = document.querySelector('.value[data-seconds]');
+let daysEl = document.querySelector('[data-days]');
+let hoursEl = document.querySelector('[data-hours]');
+let minutesEl = document.querySelector('[data-minutes]');
+let secondsEl = document.querySelector('[data-seconds]');
 
 const options = {
   enableTime: true,
