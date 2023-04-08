@@ -33,7 +33,7 @@ const onSubmit = evt => {
           `✅Fulfilled promise ${position} in ${delay}ms`
         );
       })
-      .catch(({ position, delay }) =git> {
+      .catch(({ position, delay }) => {
         Notiflix.Notify.failure(`❌Rejected promise ${position} in ${delay}ms`);
       });
     delayEl += stepEl;
